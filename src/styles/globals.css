@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.utility-class {
+  @apply mx-2 text-sm no-underline flex items-center hover:text-hoverColor active:text-activeColor font-semibold;
+}
+.font-awesome {
+  @apply w-4 h-4 inline-block;
+}
+.utility-text {
+  @apply pl-1 text-sm/[12px];
+}
+.input-search-box{
+  @apply relative lg:min-w-[50%] min-w-[100%] pb-2  flex lg:my-0 my-3 mx-2 lg:mx-0 justify-center;
+}
+.mobile-menu{
+  @apply flex  justify-between py-5 lg:py-0 mx-5 lg:mx-0 cursor-pointer;
+}
+.hamburger-menu{
+  @apply border-b-2 shadow-md pb-2  flex justify-between w-full lg:hidden;
+}
+.hamburger-submenu{
+  @apply lg:flex-col flex lg:py-8 py-5 mx-6 lg:mx-0 lg:p-8 lg:justify-normal justify-between lg:border-r-2 border-inherit flex-[0_0_25%]  lg:max-w-[25%];
+}
+
+.submenu-border:not(:last-child){
+  border-bottom: 1px solid #d2d2d2;
+  margin: 0px 20px;
+}
+.category-menu:not(:last-child){
+  border-bottom: 1px solid #d2d2d2;
+  margin: 0px 20px;
+}
